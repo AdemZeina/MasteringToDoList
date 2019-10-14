@@ -94,6 +94,13 @@ You can see example of **code-first** Entity definition as below;
         InProgress=1,
         Complete=2
     }
+    
+    public enum DataStatus
+    {
+        Active = 1,
+        Archive = 2,
+        Deleted = 3
+    }
 ```
 
 #### Specifications
