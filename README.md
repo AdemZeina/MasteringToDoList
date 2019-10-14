@@ -38,8 +38,63 @@ Includes Entity Framework Core Entities which creates sql table with **Entity Fr
 You can see example of **code-first** Entity definition as below;
 ![Recordit GIF](https://cdn1.imggmi.com/uploads/2019/10/14/4427eda74c9c99190ee53d5335e517d6-full.gif)
 
- 
 
+```csharp
+    public class Entity:IEntity
+    {
+        [Key]
+        public Guid Id { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+
+        public DateTime? UpdatedDate { get; set; }
+
+        public Guid CreatedUser { get; set; }
+
+        public Guid? UpdatedUser { get; set; }
+
+        public DateTime? DeletedDate { get; set; }
+
+        public Enums.Enums.DataStatus DataStatus { get; set; }
+    }
+```
+
+```csharp
+    public class ApplicationUser : IdentityUser
+    {
+        public override string Email { get; set; }
+
+        public override string UserName { get; set; }
+    }
+```
+```csharp
+    public class ToDoList:Entity
+    {
+        public string Name { get; set; }
+        public ApplicationUser User { get; set; }
+
+        public List<ToDoItem> Items { get; set; }
+    }
+```
+
+```csharp
+    public class ToDoItem:Entity
+    {
+        public string Description { get; set; }
+
+        public Status Status { get; set; }
+        public DateTime DeadLine { get; set; }
+        public ToDoList ToDoList { get; set; }
+    }
+```
+```csharp
+    public enum Status
+    {
+        Draft=0,
+        InProgress=1,
+        Complete=2
+    }
+```
 
 #### Specifications
 This folder is implementation of **[specification pattern](https://en.0wikipedia.org/wiki/Specification_pattern)**. Creates custom scripts with using **ISpecification** interface. Using BaseSpecification managing Criteria, Includes, OrderBy, Paging.
