@@ -7,11 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "masteringToDoList.WPF", "ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "masteringToDoList.WebApi", "masteringToDoList.WebApi\masteringToDoList.WebApi.csproj", "{6F531795-1B56-4545-851B-E054BAB4518F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDoList.Core", "masteringToDoList.Core\masteringToDoList.Core.csproj", "{0EEF9740-0E00-4379-88CD-60BDBA6D8CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "masteringToDoList.Core", "masteringToDoList.Core\masteringToDoList.Core.csproj", "{0EEF9740-0E00-4379-88CD-60BDBA6D8CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDoList.Infrastructure", "masteringToDoList.Infrastructure\masteringToDoList.Infrastructure.csproj", "{F691DB87-0CA6-4833-A8BC-E10D72B73CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "masteringToDoList.Infrastructure", "masteringToDoList.Infrastructure\masteringToDoList.Infrastructure.csproj", "{F691DB87-0CA6-4833-A8BC-E10D72B73CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDoList.Application", "masteringToDoList.Application\masteringToDoList.Application.csproj", "{B5E5B501-647B-4E94-A029-212AB2597466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "masteringToDoList.Application", "masteringToDoList.Application\masteringToDoList.Application.csproj", "{B5E5B501-647B-4E94-A029-212AB2597466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7B710428-1252-489C-A48D-FA06A170D08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDolist.Application.Tests", "masteringToDolist.Application.Tests\masteringToDolist.Application.Tests.csproj", "{662AF6BD-97C7-4350-8237-0E084D9A3CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDolist.Core.Tests", "masteringToDolist.Core.Tests\masteringToDolist.Core.Tests.csproj", "{74159783-CF62-4D20-9FCE-1EDE81DF3A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDolist.Infrastructure.Tests", "masteringToDolist.Infrastructure.Tests\masteringToDolist.Infrastructure.Tests.csproj", "{F5A50A75-A24A-41A8-96C5-594BE323BA0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masteringToDolist.WebApi.Tests", "masteringToDolist.WebApi.Tests\masteringToDolist.WebApi.Tests.csproj", "{4C805AC9-5280-4A72-9043-053FB2BD3000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +49,31 @@ Global
 		{B5E5B501-647B-4E94-A029-212AB2597466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5E5B501-647B-4E94-A029-212AB2597466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5E5B501-647B-4E94-A029-212AB2597466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662AF6BD-97C7-4350-8237-0E084D9A3CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662AF6BD-97C7-4350-8237-0E084D9A3CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662AF6BD-97C7-4350-8237-0E084D9A3CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662AF6BD-97C7-4350-8237-0E084D9A3CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74159783-CF62-4D20-9FCE-1EDE81DF3A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74159783-CF62-4D20-9FCE-1EDE81DF3A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74159783-CF62-4D20-9FCE-1EDE81DF3A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74159783-CF62-4D20-9FCE-1EDE81DF3A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A50A75-A24A-41A8-96C5-594BE323BA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A50A75-A24A-41A8-96C5-594BE323BA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A50A75-A24A-41A8-96C5-594BE323BA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A50A75-A24A-41A8-96C5-594BE323BA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C805AC9-5280-4A72-9043-053FB2BD3000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C805AC9-5280-4A72-9043-053FB2BD3000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C805AC9-5280-4A72-9043-053FB2BD3000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C805AC9-5280-4A72-9043-053FB2BD3000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{662AF6BD-97C7-4350-8237-0E084D9A3CCA} = {7B710428-1252-489C-A48D-FA06A170D08C}
+		{74159783-CF62-4D20-9FCE-1EDE81DF3A3E} = {7B710428-1252-489C-A48D-FA06A170D08C}
+		{F5A50A75-A24A-41A8-96C5-594BE323BA0E} = {7B710428-1252-489C-A48D-FA06A170D08C}
+		{4C805AC9-5280-4A72-9043-053FB2BD3000} = {7B710428-1252-489C-A48D-FA06A170D08C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7BE1F0E-3A67-410E-A908-E15FE8F6D133}
