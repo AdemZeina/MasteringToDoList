@@ -144,6 +144,9 @@ Test projects using **xunit and Mock libraries**.  xunit, because that's what AS
 * AutoMapper
 * WPF
 * MVVM
+* MsSql
+
+
 
 ## Architecture
 * Clean Architecture
